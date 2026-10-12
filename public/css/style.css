@@ -1,0 +1,145 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/*footer */
+footer {
+    width:100%;
+    margin-top:auto;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    margin: 0 0.5rem;
+}
+
+.f-info-links a:hover {
+  text-decoration:underline;
+
+}
+
+.f-info-links,.f-info-socials, .f-info-brand{
+    width : 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info{
+    text-align:center;
+    display:flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:space-evenly;
+}
+
+/* CARDS */ 
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card_body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/*card effect*/
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+
+/* New Page */
+.add-btn{
+   background-color: #fe424d !important;
+   border:none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+      background-color: #fe424d !important;
+   border:none !important; 
+}
+/* 
+show PAGE */
+.btns{
+    display:flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+#map {
+    height: 400px;
+    width:80vh;
+ 
+}
+
+/* Mapbox ke default dot ko car icon se replace karein */
+.mapboxgl-user-location-dot {
+    background-image: url('https://img.icons8.com/color/48/car--v1.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    width: 32px !important;
+    height: 32px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Dot ke aaspas ka pulsing circle agar hatana ho */
+.mapboxgl-user-location-dot-stale {
+    display: none;
+}
